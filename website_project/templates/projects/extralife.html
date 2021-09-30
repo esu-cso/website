@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!--Main info section-->
+
+<!--Title -->
+  <div class="py-1">
+    <div class=" py-lg-1">
+      <div class="col-lg-6 col-md-8 ml-5">
+         <h2 class="featurette-heading">Extra Life Annual Charity Event</h2>
+          <h3 class="lead">What is Extra Life?</h3>
+          <p class="lead">Extra Life is an organization that gathers gamers and streamers around the globe to play games in support of their local children's hospitals.
+                These local hospitals are all under the support of the Children's Miracle Network. Extra Life has helped raise over $87 Million
+                for sick and injured kids.</p>
+          <button type="button" class="btn btn-primary btn-lg" href="https://www.extra-life.org/index.cfm?fuseaction=cms.page&id=1306">Extra Life About</button>
+          <button type="button" class="btn btn-primary btn-lg" href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.team&teamID=56538">Donate to our Hospitals</button>
+      </div>
+    </div>
+  </div>
+<!--Title end-->
+
+<!--Main content-->
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Raised $2000 in 2020's stream!</h3>
+              <p class="card-text">We had a huge success in 2020 with hitting our $2,000 goal during our 24-hour stream. We were featured in ESU Insider to recognize our success!</p>
+                <a href="https://quantum.esu.edu/insider/esu-computer-science-organization-raises-more-than-2000-to-help-hospitals-around-the-globe/" class="btn btn-secondary my-2">ESU Insider Article</a>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}
