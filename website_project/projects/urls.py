@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('projects/', views.ProjectPage.as_view(), name='projects'),
+    path('', views.ProjectPage.as_view(), name='projects'),
     path('extra-life/', views.ExtraLife.as_view(), name='extralife'),
 
 ]
