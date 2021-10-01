@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'posts',
     'django.contrib.humanize',
     'debug_toolbar',
+    'projects'
 ]
 
 MIDDLEWARE = [

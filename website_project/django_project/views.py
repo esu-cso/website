@@ -13,8 +13,4 @@ class TestPage(TemplateView):
 class ThanksPage(TemplateView):
     template_name = 'thanks.html'
 
-class ProjectPage(TemplateView):
-    template_name = 'projects.html'
 
-class ExtraLife(TemplateView):
-    template_name = 'projects/extralife.html'
