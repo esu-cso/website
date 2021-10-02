@@ -368,7 +368,7 @@ margin-bottom: -60px;
 }
 
 .card{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 /*--------------------------------------------------------------
@@ -398,4 +398,49 @@ margin-bottom: -60px;
 .back-to-top i:hover {
   background: #D3D3D3;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# News Events Page Cards
+--------------------------------------------------------------*/
+
+  .box-shadow { 
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.938); 
+  }
+
+  /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 35rem;
+  background-color: #32353b;
+}
+.carousel-item > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: 25rem;
+}
+
+.btnTable {
+  padding: 20px;
+}
+
+.slideHeader {
+  padding: 20px;
+  margin: 20px;
 }
