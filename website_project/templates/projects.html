@@ -7,8 +7,9 @@
   <div class="py-1">
     <div class=" py-lg-1">
       <div class="col-lg-6 col-md-8 ml-5">
-         <h2 class="featurette-heading">Our Projects:</h2>
-          <p class="lead">These are all of our current projects. Members are able to join any project they want. If you are interested in starting your own project, contact ..</p>
+         <h1 class="text-white">Our Projects:</h1>
+          <p class="lead">These are all of our current projects. Members are able to join any project they want. If you are interested in starting your own project, contact
+              our project manager to get started.</p>
       </div>
     </div>
   </div>
@@ -17,70 +18,76 @@
 <!-- Projects List -->
 
   <div class="py-5">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="container marketing">
 
            <!--Project -->
-        <div class="col">
-          <div class="card shadow-sm">
+    <hr class="featurette-divider" color="white">
+    <div class="row featurette">
+        <div class="col-md-5">
             <img class="bd-placeholder-img card-img-top" src="{% static 'images/project_gamedev.jpg' %}" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="true" alt="An Image of a Playstation controller laying on a desk in the foreground with a blured laptop positioned behind the controller"><rect width="100%" height="100%" fill="#55595c"/></img>
-              <div class="card-body">
-              <h3 class="card-title">Extra Life</h3>
-              <p class="card-text">Annual charity event with the Children's Miracle Network. We stream on Twitch for 24 hours.</p>
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Extra Life:
+            <span class="text-muted">Children's Miracle Network</span></h2>
+            <p class="lead">Annual charity event with the Children's Miracle Network. We stream on Twitch for 24 hours, playing games in support of our local hospitals.</p>
                 <a href="{% url 'extralife' %}" class="btn btn-secondary my-2">More info</a>
             </div>
-          </div>
-        </div>
+    </div>
 
-          <!--Project -->
-        <div class="col">
-          <div class="card shadow-sm">
+        <!--Project -->
+    <hr class="featurette-divider" color="white">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Telescope Stand</h2>
+            <p class="lead">Working with Dr. Buckley, we are attempting to set up a way of tracking objects in the night sky to be viewed and recorded.</p>
+                <a href="#" class="btn btn-secondary my-2">More info</a>
+        </div>
+        <div class="col-md-5">
             <img class="bd-placeholder-img card-img-top" src="{% static 'images/project_telescope.jpg' %}" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="true" alt="An Image of the moon with a shadow cast upon it's lower three-fourths area, revealing only the upper quarter"><rect width="100%" height="100%" fill="#55595c"/></img>
-              <div class="card-body">
-              <h3 class="card-title">Telescope Stand</h3>
-              <p class="card-text">With Prof. Buckley, we connected a telescope stand to a computer. This stand is able to point to a planet with the computer's input.</p>
-                <a href="#" class="btn btn-secondary my-2">More info</a>
-            </div>
-          </div>
         </div>
-          <!--Project -->
-        <div class="col">
-          <div class="card shadow-sm">
+    </div>
+
+        <!--Project -->
+    <hr class="featurette-divider" color="white">
+    <div class="row featurette">
+        <div class="col-md-5">
             <img class="bd-placeholder-img card-img-top" src="{% static 'images/project_conf.jpg' %}" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="true" alt="An image of a man using a large screen to give a speech to a crowd of people at a conference"><rect width="100%" height="100%" fill="#55595c"/></img>
-            <div class="card-body">
-              <h3 class="card-title">Attend and Host Conferences</h3>
-              <p class="card-text">We like to go to conferences, like CPOSC, as a club. This allows out members to learn and get inspired.</p>
-                <a href="#" class="btn btn-secondary my-2">More info</a>
-            </div>
-          </div>
         </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Attend and Host Conferences</h2>
+            <p class="lead">We like to go to conferences, like CPOSC, as a club. This allows out members to learn and get inspired. During the Spring semester we've invited speakers to join us online and give insight
+             into the Computer Science field.</p>
+                <a href="#" class="btn btn-secondary my-2">More info</a>
+        </div>
+    </div>
 
           <!--Project -->
-       <div class="col">
-          <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="{% static 'images/project_windmill.jpg' %}" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="true" alt="A grassing plain with five white windmills with red stripes on their propellers standing still in the foreground on a sunny day with many clouds in the sky"><rect width="100%" height="100%" fill="#55595c"/></img>
-              <div class="card-body">
-              <h3 class="card-title">The Wind Turbine</h3>
-              <p class="card-text">We plan to make a small wind turbine that could also display information on the weather conditions.</p>
+    <hr class="featurette-divider" color="white">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">The Wind Turbine</h2>
+            <p class="lead">Applying our knowledge in a real-world scenario, we can see how our learning can be used like collecting weather data.</p>
                 <a href="#" class="btn btn-secondary my-2">More info</a>
-            </div>
-          </div>
         </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img card-img-top" src="{% static 'images/project_windmill.jpg' %}" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="true" alt="A grassing plain with five white windmills with red stripes on their propellers standing still in the foreground on a sunny day with many clouds in the sky"><rect width="100%" height="100%" fill="#55595c"/></img>
+        </div>
+    </div>
 
            <!--Project -->
-        <div class="col">
-          <div class="card shadow-sm">
+    <hr class="featurette-divider" color="white">
+    <div class="row featurette">
+        <div class="col-md-5">
             <img class="bd-placeholder-img card-img-top" src="{% static 'images/project_gamedev.jpg' %}" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="true" alt="An Image of a Playstation controller laying on a desk in the foreground with a blured laptop positioned behind the controller"><rect width="100%" height="100%" fill="#55595c"/></img>
-              <div class="card-body">
-              <h3 class="card-title">Game Development</h3>
-              <p class="card-text">Members enjoy taking their skills and practicing them by making small games.</p>
-                <a href="#" class="btn btn-secondary my-2">More info</a>
-            </div>
-          </div>
         </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Game Development</h2>
+            <p class="lead">Members enjoy taking their skills and practicing them by making small games.</p>
+                <a href="#" class="btn btn-secondary my-2">More info</a>
+        </div>
+    </div>
 
         <!-- end Projects -->
-      </div>
     </div>
   </div>
 <!-- End Projects List -->

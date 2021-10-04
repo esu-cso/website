@@ -1,7 +1,7 @@
-"""django_project URL Configuration
+"""esucso URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-from django.conf import settings
 
 urlpatterns = [
     path('', views.HomePage.as_view(), name='home'),
@@ -26,14 +25,8 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('test/', views.TestPage.as_view(), name='test'),
     path('thanks/', views.ThanksPage.as_view(), name='thanks'),
-    path('posts/', include('posts.urls', namespace='posts')),
-    path('groups/', include('groups.urls', namespace='groups')),
+  #  path('posts/', include('posts.urls', namespace='posts')),
+   # path('groups/', include('groups.urls', namespace='groups')),
     path('projects/', include("projects.urls")),
-    path('NewsEvents/', views.NewsEvents.as_view(), name='NewsEvents'),
+    path('NewsEvents/', include("newsevents.urls")),
 ]
-
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns = [
-        path('__debug__/', include(debug_toolbar.urls)),
-    ] + urlpatterns
