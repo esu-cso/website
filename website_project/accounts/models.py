@@ -1,17 +1,39 @@
 from django.db import models
 from django.contrib import auth
 from django.contrib.auth.models import User
-from django.db.models.fields import UUIDField
 import uuid
+from django.dispatch import receiver 
+from django.db.models.signals import post_save
+
 
 
 # Create your models here.
-class User(auth.models.User, auth.models.PermissionsMixin):
-
-    def __str__(self):
-        return "@{}".format(self.username)
 
 class UserProfile(models.Model):
-  # id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
-   # user = models.OneToOneField(User, on_delete=models.CASCADE)
-    test = models.CharField(max_length=25)
+    roles = [
+       ('M', 'Member'),
+       ('BM', 'Board Member'),
+       ('F', 'Faculty')
+    ]
+    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+    user = models.OneToOneField(User, related_name="userprofile", on_delete=models.CASCADE, null=True, blank=False)
+    profileimage = models.ImageField(upload_to ='static/images/userupload/userprofileimage', null=True, blank=True)
+    role = models.CharField(max_length=15, blank=True, null=True, choices=roles, default='M')
+    bio = models.TextField(null=True, blank=True)
+    dob = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+      return str(self.user)
+    
+
+    @receiver(post_save, sender=User)
+    def CreateProfile(sender, instance, created, **kwargs):
+      if created:
+        UserProfile.objects.create(user=instance)
+
+    @receiver(post_save, sender=User)
+    def SaveProfile(sender, instance, **kwargs):
+      instance.userprofile.save()
+
+
+    

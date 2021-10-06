@@ -1,8 +1,11 @@
 from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
+from django.urls.base import reverse
 from django.views.generic import CreateView
 from django.views.generic.base import TemplateView
+
+#from .models import UserProfile
 from . import forms
 from django.contrib.auth.decorators import login_required
 
@@ -10,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 class SignUpPage(CreateView):
     form_class = forms.UserCreateForm
     # reverse lazy to wait for them to click sign up first
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('accounts:signedup')
     template_name = 'accounts/signup.html'
 
 class LogInPage(LoginView):
@@ -21,3 +24,7 @@ class MembersPage(TemplateView):
 
 class ProfilePage(TemplateView):
     template_name = 'accounts/profile.html'
+
+class SignedUpPage(TemplateView):
+    template_name = 'accounts/signedup.html'
+
