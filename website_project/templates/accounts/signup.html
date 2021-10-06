@@ -5,6 +5,7 @@
 
     <div class="container container-small sign-up-form" style="color: white">
         <h1>Create an account</h1>
+        <p>You must be a student or faculty member at East Stroudsburg University to sign up.</p>
         <h6>Already have an account? <a href="{% url 'accounts:login' %}">Sign in</a></h6>
         <form method="POST">
             {% csrf_token %}

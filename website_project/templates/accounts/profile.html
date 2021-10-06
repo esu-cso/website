@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="color: white">Hello, {{ user.username}}! Profile page.</h1>
+    <h1>Role: {{ user.userprofile.bio }}</h1>
+{% endblock %}
