@@ -33,8 +33,8 @@ class UserCreateForm(UserCreationForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['username'].label = 'Display Name'
-        self.fields['email'].label = 'Email Address'
+        self.fields['username'].label = 'Username'
+        self.fields['email'].label = 'ESU Email Address'
 
 
 class LoginForm(AuthenticationForm):

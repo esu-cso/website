@@ -7,9 +7,6 @@ class HomePage(TemplateView):
 class ConstructionPage(TemplateView):
     template_name = 'underconstruction.html'
 
-class TestPage(TemplateView):
-    template_name = 'test.html'
-
 class ThanksPage(TemplateView):
     template_name = 'thanks.html'
 
