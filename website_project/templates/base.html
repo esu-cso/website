@@ -63,9 +63,6 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     {% if user.is_authenticated %}
-                        <li class="nav-item "><a href="{% url 'posts:create' %}" class="btn btn-simple btn-lg ">Post</a></li>
-                        <li class="nav-item"><a href="{% url 'groups:all' %}" class="btn btn-simple btn-lg">Groups</a></li>
-                        <li class="nav-item"><a href="{% url 'groups:create' %}" class="btn btn-simple btn-lg">Create Group</a></li>
                         <div class="dropdown-divider"></div>
                         <li class="nav-item"><a href="{% url 'accounts:logout' %}" class="btn btn-simple btn-lg">Logout</a></li>
                     {% else %}
@@ -108,7 +105,7 @@
                 <a class="footer-text" href="{% url 'home' %}">Home </a>
                 <a class="footer-text" href="{% url 'projects' %}">Projects</a>
                 <a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
-                <a class="footer-text" href="{% url 'underconstruction' %}">About us</a>
+                <a class="footer-text" href="{% url 'aboutus' %}">About us</a>
                 <a class="back-to-top" style="text-decoration: none;" href="#"><i class="icofont-rounded-up"></i></a>
             </p>
        </div>
