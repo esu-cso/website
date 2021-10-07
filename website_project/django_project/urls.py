@@ -17,8 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 from django.conf import settings
-from django.views.generic.base import RedirectView
-from django.contrib.staticfiles.storage import staticfiles_storage
 
 urlpatterns = [
     path('', views.HomePage.as_view(), name='home'),
@@ -31,7 +29,6 @@ urlpatterns = [
     path('posts/', include('posts.urls', namespace='posts')),
     path('groups/', include('groups.urls', namespace='groups')),
     path('projects/', include("projects.urls")),
-    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url("images/favicon.ico")),)
 ]
 
 if settings.DEBUG:
