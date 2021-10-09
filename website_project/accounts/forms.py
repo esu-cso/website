@@ -1,8 +1,10 @@
 from django.contrib.auth import get_user_model, authenticate
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.forms import UserChangeForm, UserCreationForm, AuthenticationForm
 from django.core.exceptions import ValidationError
 from django import forms
 from django.contrib.auth.models import User
+from django.forms.models import ModelForm
+from .models import UserProfile
 
 
 # Make sure this class is not the same name as "UserCreationForm"
@@ -11,7 +13,7 @@ class UserCreateForm(UserCreationForm):
     def clean_email(self):
         email = self.cleaned_data['email']
         email_source = email.split('@')[-1]
-        permitted_sources = ['live.esu.edu']
+        permitted_sources = ['live.esu.edu', 'esu.edu']
 
         if email_source not in permitted_sources:
             raise ValidationError("That is not a valid email address.")
@@ -61,3 +63,14 @@ class LoginForm(AuthenticationForm):
                     )
 
         return self.cleaned_data
+
+
+class UserEditUser(ModelForm):    
+    class Meta:
+        model = User
+        fields = ('first_name', 'last_name', 'username')
+
+class UserEditProfile(ModelForm):
+    class meta:
+        model = UserProfile
+        fields = ('dob', 'bio')

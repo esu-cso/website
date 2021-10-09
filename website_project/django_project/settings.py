@@ -127,6 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+LOGIN_URL='/members/login'
 LOGIN_REDIRECT_URL = '/members/'
 LOGOUT_REDIRECT_URL = 'thanks'
 INTERNAL_IPS = env_config.get('INTERNAL_IPS', default=['127.0.0.1'], cast=Csv())
