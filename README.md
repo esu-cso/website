@@ -4,11 +4,11 @@ This repository is created and maintained by the students of East Stroudsburg Un
 
 This project represents the webpage to our [website](https://esucso.org/).
 
-The project is a great oppourtunity to hone key development skills and we wish to emulate a real development team as much as possible.
+The project is a great oppourtunity to hone key development skills and we wish to emulate a real development team as much as possible. It is also a great boost to your resume!
 
 ESU students or alumni can contact a CSO representative (link pending) if you are interesting in being added.
 
-Students are encouraged to create [issues](https://github.com/esucsowt/website/issues) and contribute.
+Members are encouraged to create [issues](https://github.com/esucsowt/website/issues) and contribute.
 
 ## How to setup a development environment
 Either [Github Desktop](https://desktop.github.com/) or [Sourcetree](https://www.sourcetreeapp.com/) are good git-gui clients.

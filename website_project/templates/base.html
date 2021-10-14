@@ -57,19 +57,17 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a href="{% url 'home' %}" class="btn btn-simple btn-lg">Home</a></li>
                     {% if user.is_authenticated %}
-                        <li class="nav-item"><a href="{% url 'underconstruction' %}" class="btn btn-simple btn-lg">Members</a></li>
+                        <li class="nav-item"><a href="{% url 'accounts:memberspage' %}" class="btn btn-simple btn-lg">Members</a></li>
                     {% else %}
                     {% endif %}
                     <li class="nav-item"><a href="{% url 'projects' %}" class="btn btn-simple btn-lg">Projects</a></li>
-                    <li class="nav-item"><a href="{% url 'underconstruction' %}" class="btn btn-simple btn-lg">News/Events</a></li>
-                    <li class="nav-item"><a href="{% url 'underconstruction' %}" class="btn btn-simple btn-lg">About Us</a></li>
+                    <li class="nav-item"><a href="{% url 'NewsEvents' %}" class="btn btn-simple btn-lg">News/Events</a></li>
+                    <li class="nav-item"><a href="{% url 'aboutus' %}" class="btn btn-simple btn-lg">About Us</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    {% if user.is_authenticated %}
-                        <li class="nav-item "><a href="{% url 'posts:create' %}" class="btn btn-simple btn-lg ">Post</a></li>
-                        <li class="nav-item"><a href="{% url 'groups:all' %}" class="btn btn-simple btn-lg">Groups</a></li>
-                        <li class="nav-item"><a href="{% url 'groups:create' %}" class="btn btn-simple btn-lg">Create Group</a></li>
+                    {% if user.is_authenticated %} 
                         <div class="dropdown-divider"></div>
+                        <li class="nav-item"><a href="{% url 'accounts:profile' %}" class="btn btn-simple btn-lg">Profile</a></li>
                         <li class="nav-item"><a href="{% url 'accounts:logout' %}" class="btn btn-simple btn-lg">Logout</a></li>
                     {% else %}
                         <div class="dropdown-divider"></div>
@@ -110,8 +108,8 @@
             <p class="lead footer-navtext">
                 <a class="footer-text" href="{% url 'home' %}">Home </a>
                 <a class="footer-text" href="{% url 'projects' %}">Projects</a>
-                <a class="footer-text" href="{% url 'underconstruction' %}">News/Events</a>
-                <a class="footer-text" href="{% url 'underconstruction' %}">About us</a>
+                <a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
+                <a class="footer-text" href="{% url 'aboutus' %}">About us</a>
                 <a class="back-to-top" style="text-decoration: none;" href="#"><i class="icofont-rounded-up"></i></a>
             </p>
        </div>
