@@ -413,7 +413,7 @@ margin-bottom: -60px;
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -423,8 +423,9 @@ margin-bottom: -60px;
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 35rem;
+  height: 40rem;
   background-color: #32353b;
+  max-height: 1400px;
 }
 .carousel-item > img {
   position: relative;
@@ -434,6 +435,7 @@ margin-bottom: -60px;
   margin-left: 10%;
   margin-right: 10%;
   min-height: 25rem;
+  max-height: 1400px;
 }
 
 .btnTable {
@@ -441,6 +443,16 @@ margin-bottom: -60px;
 }
 
 .slideHeader {
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color:#D3D3D3
 }
+
+.NewsBtn:hover{
+  color:rgb(189, 56, 56);
+  }
+
+  .slideImg {
+    object-fit: cover;
+  }
