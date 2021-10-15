@@ -8,8 +8,7 @@ function consoleText(words, id, colors) {
   var letterCount = 1;
   var funnyCatFrequency = 5;
   var funnyCatCount = 0;
-  var funnyCat = 'RUN C:/CSO_Official_Website';
-  var funnyCatColor = 'limegreen';
+  var funnyCat = 'FUNNY CAT TYPING!!!';
   var x = 1;
   var waiting = false;
   var target = document.getElementById(id)
@@ -17,25 +16,20 @@ function consoleText(words, id, colors) {
 
   window.setInterval(function() {
 
+    //words cycle
     if (letterCount === 0 && waiting === false) {
       waiting = true;
       target.innerHTML = words[0].substring(0, letterCount)
       window.setTimeout(function() {
         funnyCatCount += 1;
-        if(funnyCatCount === funnyCatFrequency - 1){
-          colors.unshift(funnyCatColor);
-          words.unshift(funnyCat)
-        }
+        if(funnyCatCount === funnyCatFrequency - 1)
+          words.unshift(funnyCat);
         else{
           if(words[0] === funnyCat){
-            colors.shift();
             words.shift();
             funnyCatCount = 0;
           }
-          var usedColor = colors.shift();
-          colors.push(usedColor);
-          var usedWord = words.shift();
-          words.push(usedWord);
+          words.push(words.shift());
         }
         x = 1;
         target.setAttribute('style', 'color:' + colors[0])
