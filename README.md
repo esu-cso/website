@@ -52,4 +52,9 @@ Step 3. You have successfully created your own branch. Now you can make changes 
 
 Step 4. Committing changes
 ![Missing Image](../website/images/read-me-images/commit-branch.png)
+
+Step 5. Push your changes to origin
 ![Missing Image](../website/images/read-me-images/commit-branch2.png)
+
+Step 6. Create a pull request
+![Missing Image](../website/images/read-me-images/commit-branch3.png)
