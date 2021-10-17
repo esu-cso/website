@@ -52,3 +52,4 @@ Step 3. You have successfully created your own branch. Now you can make changes 
 
 Step 4. Committing changes
 ![Missing Image](../website/images/read-me-images/commit-branch.png)
+![Missing Image](../website/images/read-me-images/commit-branch2.png)
