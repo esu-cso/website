@@ -48,7 +48,7 @@ Step 2. Create your own branch in Github Desktop
 <img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/create-branch2.png">
 <img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/create-branch3.png">
 
-Step 3. You have successfully created your own branch. Now you can make changes in your branch. Open your project in PyCharm at the specified at your local path you selected in Step 1.
+Step 3. You have successfully created your own branch. Now you can make changes in your branch. Open your project in PyCharm at the specified local path you selected in Step 1.
 
 Step 4. Committing changes
 <img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/commit-branch.png">
