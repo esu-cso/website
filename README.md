@@ -58,3 +58,8 @@ Step 5. Push your changes to origin
 
 Step 6. Create a pull request
 ![Missing Image](../website/images/read-me-images/commit-branch3.png)
+
+A new tab will open in your browser:
+![Missing Image](../website/images/read-me-images/commit-branch4.png)
+
+Fill out the information and select the green button "Create pull request"
