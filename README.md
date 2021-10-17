@@ -39,27 +39,27 @@ In the future this repo will use many different languages, below are some common
 ## Instructions - PyCharm - Github Desktop
 Step 1. Clone the repository in Github Desktop
 
-![Missing Image](../website/images/read-me-images/clone-repo1.png)
-![Missing Image](../website/images/read-me-images/clone-repo2.png)
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/clone-repo1.png">
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/clone-repo2.png">
 
 Step 2. Create your own branch in Github Desktop
 
-![Missing Image](../website/images/read-me-images/create-branch1.png)
-![Missing Image](../website/images/read-me-images/create-branch2.png)
-![Missing Image](../website/images/read-me-images/create-branch3.png)
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/create-branch1.png">
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/create-branch2.png">
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/create-branch3.png">
 
-Step 3. You have successfully created your own branch. Now you can make changes in your branch. Open your project in PyCharm at the specified at your local path you selected in Step 1.
+Step 3. You have successfully created your own branch. Now you can make changes in your branch. Open your project in PyCharm at the specified local path you selected in Step 1.
 
 Step 4. Committing changes
-![Missing Image](../website/images/read-me-images/commit-branch.png)
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/commit-branch.png">
 
 Step 5. Push your changes to origin
-![Missing Image](../website/images/read-me-images/commit-branch2.png)
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/commit-branch2.png">
 
 Step 6. Create a pull request
-![Missing Image](../website/images/read-me-images/commit-branch3.png)
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/commit-branch3.png">
 
 A new tab will open in your browser:
-![Missing Image](../website/images/read-me-images/commit-branch4.png)
+<img src="https://github.com/esu-cso/website/blob/dev/images/read-me-images/commit-branch4.png">
 
 Fill out the information and select the green button "Create pull request"
