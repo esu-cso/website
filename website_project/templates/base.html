@@ -65,6 +65,7 @@
                     <li class="nav-item"><a href="{% url 'aboutus' %}" class="btn btn-simple btn-lg">About Us</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="{% url 'members' %}" class="btn btn-simple btn-lg">Member Directory</a></li>
                     {% if user.is_authenticated %} 
                         <div class="dropdown-divider"></div>
                         <li class="nav-item"><a href="{% url 'accounts:profile' %}" class="btn btn-simple btn-lg">Profile</a></li>
