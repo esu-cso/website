@@ -4,6 +4,6 @@ from . import views
 from django.conf import settings
 
 urlpatterns = [
-    path('', views.NewsEvents.as_view(), name='NewsEvents'),
+    path('', views.NewsEvents.as_view(), name='news_list'),
 
 ]

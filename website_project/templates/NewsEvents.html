@@ -10,31 +10,37 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
+
     <div class="carousel-inner">
+      {% for banner in FirstNewsCarousel %}
       <div class="carousel-item active">
         <tbody>
           <tr>
             <td>
-              <h1 class="slideHeader">Extra-Life Charity Stream November 13th</h1>
+              <h1 class="slideHeader">{{banner.title}}</h1>
             </td>
           </tr>
           <tr>
             <td>
-              <img class="first-slide slideImg" src="{% static 'images/cso_stream.png' %}" alt="First slide">
+              <img class="first-slide slideImg" src="{{ banner.image.url }}" alt="First slide">
               <div class="container">
                 <div class="carousel-caption text-left">
                   <table classs="table">
                     <tbody>
                       <tr>
+                        {% if banner.btn1 %}
                         <td class="btnTable">
-                          <p><a class="btn btn-lg btn-primary" href="https://www.twitch.tv/esucso" target="_blank"
-                              role="button">Twitch Link</a></p>
+                          <p><a class="btn btn-lg btn-primary" href="{{ banner.btn1Url }}" target="_blank"
+                              role="button">{{banner.btn1}}</a></p>
                         </td>
+                        {% endif %}
+                        {% if banner.btn2 %}
                         <td>
                           <p><a class="btn btn-lg btn-primary"
-                              href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.team&teamID=56538"
-                              target="_blank" role="button">Donate</a></p>
+                              href="{{ banner.btn2Url }}"
+                              target="_blank" role="button">{{banner.btn2}}</a></p>
                         </td>
+                        {% endif %}
                       </tr>
                     </tbody>
                   </table>
@@ -43,30 +49,36 @@
             </td>
           </tr>
       </div>
+      {% endfor %}
+      {% for banner in NewsCarousel %}
       <div class="carousel-item">
         <tbody>
           <tr>
             <td>
-              <h1 class="slideHeader">Extra-Life Charity Stream November 13th</h1>
+              <h1 class="slideHeader">{{banner.title}}</h1>
             </td>
           </tr>
           <tr>
             <td>
-              <img class="first-slide slideImg" src="{% static 'images/cso_stream.png' %}" alt="First slide">
+              <img class="first-slide slideImg" src="{{ banner.image.url }}" alt="First slide">
               <div class="container">
                 <div class="carousel-caption text-left">
                   <table classs="table">
                     <tbody>
                       <tr>
+                        {% if banner.btn1 %}
                         <td class="btnTable">
-                          <p><a class="btn btn-lg btn-primary" href="https://www.twitch.tv/esucso" target="_blank"
-                              role="button">Twitch Link</a></p>
+                          <p><a class="btn btn-lg btn-primary" href="{{ banner.btn1Url }}" target="_blank"
+                              role="button">{{banner.btn1}}</a></p>
                         </td>
+                        {% endif %}
+                        {% if banner.btn2 %}
                         <td>
                           <p><a class="btn btn-lg btn-primary"
-                              href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.team&teamID=56538"
-                              target="_blank" role="button">Donate</a></p>
+                              href="{{ banner.btn2Url }}"
+                              target="_blank" role="button">{{banner.btn2}}</a></p>
                         </td>
+                        {% endif %}
                       </tr>
                     </tbody>
                   </table>
@@ -75,39 +87,9 @@
             </td>
           </tr>
       </div>
-      <div class="carousel-item">
-        <tbody>
-          <tr>
-            <td>
-              <h1 class="slideHeader">Extra-Life Charity Stream November 13th</h1>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img class="first-slide slideImg" src="{% static 'images/cso_stream.png' %}" alt="First slide">
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <table classs="table">
-                    <tbody>
-                      <tr>
-                        <td class="btnTable">
-                          <p><a class="btn btn-lg btn-primary" href="https://www.twitch.tv/esucso" target="_blank"
-                              role="button">Twitch Link</a></p>
-                        </td>
-                        <td>
-                          <p><a class="btn btn-lg btn-primary"
-                              href="https://www.extra-life.org/index.cfm?fuseaction=donordrive.team&teamID=56538"
-                              target="_blank" role="button">Donate</a></p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </td>
-          </tr>
-      </div>
+      {% endfor %}
     </div>
+
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -124,7 +106,6 @@
     <div class="container">
       <!--News Card Top Left Start -->
       <div class="row">
-
         {% for article in NewsArticles %}
         <!--News Card Top Middle Start-->
         <div class="col-md-4">
@@ -134,10 +115,10 @@
                 <p class="card-text">{{article.content}}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-primary mr-1">View</button>
                     {% if user.is_superuser %}
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit/Delete</button>
-                    {%endif %}
+                    <button type="button" class="btn btn-sm btn-primary">Edit/Delete</button>
+                    {% endif %}
                   </div>
                 </div>
               </div>

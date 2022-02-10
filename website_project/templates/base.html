@@ -58,7 +58,7 @@
                     {% else %}
                     {% endif %}
                     <li class="nav-item"><a href="{% url 'projects' %}" class="btn btn-simple btn-lg">Projects</a></li>
-                    <li class="nav-item"><a href="{% url 'NewsEvents' %}" class="btn btn-simple btn-lg">News/Events</a></li>
+                    <li class="nav-item"><a href="{% url 'news_list' %}" class="btn btn-simple btn-lg">News/Events</a></li>
                     <li class="nav-item"><a href="{% url 'aboutus' %}" class="btn btn-simple btn-lg">About Us</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -104,7 +104,7 @@
             <p class="lead footer-navtext">
                 <a class="footer-text" href="{% url 'home' %}">Home </a>
                 <a class="footer-text" href="{% url 'projects' %}">Projects</a>
-                <a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
+                <a class="footer-text" href="{% url 'news_list' %}">News/Events</a>
                 <a class="footer-text" href="{% url 'aboutus' %}">About us</a>
                 <a class="back-to-top" style="text-decoration: none;" href="#"><i class="icofont-rounded-up"></i></a>
             </p>
