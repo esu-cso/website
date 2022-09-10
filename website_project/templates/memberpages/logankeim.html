@@ -1,0 +1,55 @@
+{% load static %}
+{% block content %}
+
+<!--Web page content starts here. Remove the commented lines and the redirect script below. 
+  Do not remove the other lines as they are needed for the page to render correctly. The 
+  backend has already been setup to allow Django to utilize this page. If you have any 
+  questions or need any help put a message in the #Website channel in Discord or check 
+  out the wiki on our GitHub. https://github.com/esu-cso/ -->
+<h1 style="color:green;font-size:300%">
+  Welcome to my personal webpage!
+</h1>
+<p style="color:green;font-size:150%">
+  I'm Logan Keim, a man who is clearly more suited to backend development. Here's what I'm up to at ESU this semester!
+</p>
+
+<div class="row featurette">
+  <ul style="color:purple;font-size:120%">
+      <li>Managing all of CSO's projects!</li>
+      <li>Being vice president of math club!</li>
+      <li>Working on this semester's play, "She Kills Monsters"!</li>
+      <li>Majoring in computer security!</li>
+      <li>Majoring in computer science!</li>
+      <li>Minoring in mathematics and theatre!</li>
+  </ul>
+  <p style="color:green;font-size:130%">
+    In my free time, I'm currently:
+  </p>
+  <ul style="color:purple;font-size:120%">
+      <li>Learning Unity and C#!</li>
+      <li>Working on personal coding projects for fun!</li>
+      <li>Knitting hats!</li>
+      <li>Playing Dungeons and Dragons 5e!</li>
+      <li>Hanging out with my wonderful partner!</li>
+  </ul>
+</div>
+
+<p style="color:green;font-size:120%">
+  Most of my personal projects are private, but I've still got a bit of fun stuff on my 
+  <a href="https://github.com/eilgap">GitHub, which you can find right here!</a>
+</p>
+
+<p style="color:purple;font-size:120%">To go back to the nicely formatted CSO website, you can click on any of these links at the bottom of the page! Thank you for stopping by!</p>
+
+<div class="col footer-margin">
+  <p class="lead footer-navtext">
+      <a class="footer-text" href="{% url 'home' %}">Home</a>
+      <a class="footer-text" href="{% url 'projects' %}">Projects</a>
+      <a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
+      <a class="footer-text" href="{% url 'aboutus' %}">About us</a>
+      <a class="footer-text" href="{% url 'memberpages' %}">Member Pages</a>
+      <a class="back-to-top" style="text-decoration: none;" href="#"><i class="icofont-rounded-up"></i></a>
+  </p>
+</div>
+
+{% endblock %}
