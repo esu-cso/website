@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h1 style="color:white;font-size:300%">
+        Individual Member Pages!
+    </h1>
+</div>
+
+
+<hr class="featurette-divider" color="white">
+<div class="row featurette">
+    <ul style="color:white;font-size:150%">
+        <li>President: John Winward</li>
+        <li>Vice President: Amelio Cintron</li>
+        <li>
+            <a href="{% url 'logankeim' %}">
+                Project Manager: Logan Keim
+            </a>
+        </li>
+        <li>Treasurer: Ben Chernin</li>
+        <li>Secretary: Noah Rush</li>
+        <li>More pages to come from the rest of our delightful members!</li>
+    </ul>
+</div>
+
+{% endblock %}

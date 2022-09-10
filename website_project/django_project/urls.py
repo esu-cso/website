@@ -26,4 +26,5 @@ urlpatterns = [
     path('projects/', include("projects.urls")),
     path('NewsEvents/', include("newsevents.urls")),
     path('aboutus/', views.AboutUsPage.as_view(), name='aboutus'),
+    path('memberpages/', include("memberpages.urls"))
 ]
