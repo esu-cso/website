@@ -403,6 +403,7 @@ body.row featurette {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+
 	bottom: 3rem;
 	z-index: 10;
 }
@@ -413,18 +414,25 @@ body.row featurette {
 	background-color: #32353b;
 }
 .carousel-item > img {
+
+}
+
+.first-slide{
 	display: block;
-	height: 32rem;
+	height: 30rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.first-slide{
-
+.buttons{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btnTable {
 	padding: 20px;
+	margin: auto;
+	width: 10px;
 }
 
 .slideHeader {
