@@ -224,8 +224,10 @@ body {
 # Carousel
 --------------------------------------------------------------*/
 
-.carousel {
+/* .carousel {
 	margin-bottom: 4rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .carousel-caption {
@@ -236,11 +238,15 @@ body {
 .carousel-item {
 	height: 32rem;
 	background-color: #777;
+	margin-left: auto;
+	margin-right: auto;
 }
 .carousel-item > img {
 	position: absolute;
 	height: 32rem;
-}
+	margin-left: auto;
+	margin-right: auto;
+} */
 
 /*--------------------------------------------------------------
 # Landing Page
@@ -407,9 +413,14 @@ body.row featurette {
 	background-color: #32353b;
 }
 .carousel-item > img {
-	position: relative;
-	margin-left: 10%;
-	margin-right: 10%;
+	display: block;
+	height: 32rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.first-slide{
+
 }
 
 .btnTable {
