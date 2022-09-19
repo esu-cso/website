@@ -47,6 +47,10 @@ body {
 	background-color: #32353b;
 }
 
+body > div {
+	margin-top: 2rem;
+}
+
 .console-container {
 	font-family: logoFont;
 	font-size: 3em;
@@ -105,46 +109,63 @@ body {
 /*--------------------------------------------------------------
 # Logo background
 --------------------------------------------------------------*/
-
 .logo-background {
+	padding: 2px 0px;
 	position: relative;
 }
 
 .logo-background div {
 	width: 100%;
+	border: 2px #161616 solid;
+}
+
+header .logo-background div {
 	height: 20px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #161613;
+	border: 2px inherit inherit;
+	border-radius: 10px;
+}
+
+footer .logo-background div {
+	height: 10px;
+	border: px inherit inherit;
 	border-radius: 5px;
 }
 
+:root {
+	--orange-red-crayola: #fe5f55;
+	--flame: #e4572e;
+	--honey-yellow: #f7b32b;
+	--mountain-meadow: #13c4a3;
+	--sea-green-crayola: #36f1cd;
+	--carolina-blue: #39a0ed;
+}
+
 .logo-background .orange-red-crayola {
-	background-color: #fe5f55;
+	background-color: var(--orange-red-crayola);
 }
 
 .logo-background .flame {
-	background-color: #e4572e;
+	background-color: var(--flame);
 }
 
 .logo-background .honey-yellow {
-	background-color: #f7b32b;
+	background-color: var(--honey-yellow);
 }
 
 .logo-background .mountain-meadow {
-	background-color: #13c4a3;
+	background-color: var(--mountain-meadow);
 }
 
 .logo-background .sea-green-crayola {
-	background-color: #36f1cd;
+	background-color: var(--sea-green-crayola);
 }
 
 .logo-background .carolina-blue {
-	background-color: #39a0ed;
+	background-color: var(--carolina-blue);
 }
 
 .logo-background .logo-image {
-	height: 65%;
+	height: 5rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -160,13 +181,25 @@ body {
 	margin-right: 25px;
 }
 
+/* if using nathan's footer table 
+table {
+	margin: 1rem auto;
+	text-align: center;
+}
+.footer-text {
+	margin: 12px;
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+*/
+
 .footer-navtext {
 	margin-top: 5px;
 	text-align: center;
 }
 
 .footer-disclaimer {
-	margin-top: 15px;
+	margin: 1rem;
 	font-weight: bold;
 	font-size: 17px;
 	color: gray;
@@ -191,24 +224,17 @@ body {
 /*--------------------------------------------------------------
 # Nav menu
 --------------------------------------------------------------*/
-
-.navbar {
-	margin-bottom: 0;
-}
-
-.below-nav {
-	width: 100%;
-	height: 20px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #161613;
-	border-radius: 5px;
-	background-color: #39a0ed;
+#navigation-bar {
+	border-bottom: 2px #161616 solid;
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Header and Footer
 --------------------------------------------------------------*/
+header,
+footer {
+	background-color: #161616;
+}
 
 .below-footer {
 	width: 100%;
@@ -403,7 +429,6 @@ body.row featurette {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-
 	bottom: 3rem;
 	z-index: 10;
 }
@@ -413,18 +438,15 @@ body.row featurette {
 	height: 35rem;
 	background-color: #32353b;
 }
-.carousel-item > img {
 
-}
-
-.first-slide{
+.first-slide {
 	display: block;
 	height: 30rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.buttons{
+.buttons {
 	margin-left: auto;
 	margin-right: auto;
 }

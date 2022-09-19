@@ -49,7 +49,7 @@
 		<script src="{% static 'js/main.js' %}"></script>
 	</head>
 	<body>
-		<section id="logo-top">
+		<header>
 			<div class="logo-background">
 				<div class="orange-red-crayola"></div>
 				<div class="flame"></div>
@@ -57,15 +57,13 @@
 				<div class="mountain-meadow"></div>
 				<div class="sea-green-crayola"></div>
 				<div class="carolina-blue"></div>
-				<div class="logo-image-container">
-					<img
-						class="logo-image"
-						src="{% static 'images/CSO_BLEK.png' %}"
-						alt="The letters C S O in a white bold retro style font with a black background"
-					/>
-				</div>
+				<img
+					class="logo-image"
+					src="{% static 'images/CSO_BLEK.png' %}"
+					alt="The letters 'CSO' in a white bold retro style font with a black background."
+				/>
 			</div>
-		</section>
+		</header>
 
 		<section id="navigation-bar">
 			<nav class="navbar navbar-expand-md navbar-dark navbar-static-top">
@@ -163,7 +161,6 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="below-nav"></div>
 		</section>
 
 		{% block content %} {% endblock %}
@@ -190,26 +187,43 @@
 					></a>
 				</p>
 			</div>
-
 			<!-- <div>
 				<table aria-colcount="4" aria-rowcount="1">
-					<tr class="footer-text">
-						<td><a href="{% url 'home' %}">Home</a></td>
+					<tr>
+						<td><a href="{% url 'home' %}" class="footer-text">Home</a></td>
 					</tr>
-					<tr class="footer-text">
-						<td><a href="{% url 'projects' %}">Projects</a></td>
+					<tr>
+						<td>
+							<a href="{% url 'projects' %}" class="footer-text">Projects</a>
+						</td>
 					</tr>
-					<tr class="footer-text">
-						<td><a href="{% url 'NewsEvents' %}">News/Events</a></td>
+					<tr>
+						<td>
+							<a href="{% url 'NewsEvents' %}" class="footer-text"
+								>News/Events</a
+							>
+						</td>
 					</tr>
-					<tr class="footer-text">
-						<td><a href="{% url 'aboutus' %}">About Us</a></td>
+					<tr>
+						<td>
+							<a href="{% url 'aboutus' %}" class="footer-text">About Us</a>
+						</td>
 					</tr>
-					<tr class="footer-text">
-						<td><a href="{% url 'memberpages' %}">Member Pages</a></td>
+					<tr>
+						<td>
+							<a href="{% url 'memberpages' %}" class="footer-text"
+								>Member Pages</a
+							>
+						</td>
 					</tr>
 				</table>
-			</div> -->
+			</div>
+			<a
+				class="back-to-top"
+				style="text-decoration: none; display: inline"
+				href="#"
+				><i class="icofont-rounded-up"></i>
+			</a> -->
 
 			<div class="col below-footer-bg">
 				<p class="footer-disclaimer">
