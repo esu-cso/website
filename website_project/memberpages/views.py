@@ -5,3 +5,6 @@ class memberpages(TemplateView):
 
 class logankeim(TemplateView):
     template_name = 'memberpages/logankeim.html'
+
+class johnwinward(TemplateView):
+    template_name = 'memberpages/johnwinward.html'

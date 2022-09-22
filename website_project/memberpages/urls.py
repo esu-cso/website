@@ -7,5 +7,6 @@ from django.conf import settings
 urlpatterns = [
     path('', views.memberpages.as_view(), name='memberpages'),
     path('logankeim/', views.logankeim.as_view(), name='logankeim'),
+    path('johnwinward/', views.johnwinward.as_view(), name='johnwinward'),
 ]
 
