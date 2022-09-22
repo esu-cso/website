@@ -1,124 +1,236 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Computer Science Organization</title>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Computer Science Organization</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="{% static 'images/favicon.ico' %}"
+		/>
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.min.css' %}">
+		<!-- BOOTSTRAP -->
+		<link
+			rel="stylesheet"
+			href="{% static 'vendor/bootstrap/bootstrap.min.css' %}"
+		/>
 
-    <!--  Vendor CSS Files  -->
-    <link rel="stylesheet" href="{% static 'vendor/icofont/icofont.min.css' %}">
+		<!--  Vendor CSS Files  -->
+		<link
+			rel="stylesheet"
+			href="{% static 'vendor/icofont/icofont.min.css' %}"
+		/>
 
-    <!--  CSS  -->
-    <link rel="stylesheet" href="{% static 'css/master.css' %}">
-    <link rel="stylesheet" href="{% static 'vendor/owl/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'vendor/owl/owl.theme.default.min.css' %}">
+		<!--  CSS  -->
+		<link rel="stylesheet" href="{% static 'css/master.css' %}" />
+		<link
+			rel="stylesheet"
+			href="{% static 'vendor/owl/owl.carousel.min.css' %}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{% static 'vendor/owl/owl.theme.default.min.css' %}"
+		/>
 
-    <!--  GOOGLE FONT  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+		<!--  GOOGLE FONT  -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- Javascript -->
-    <script src="{% static 'vendor/bootstrap/jquery-3.6.0.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/bootstrap.min.js' %}"></script>
-    <script src="{% static 'vendor/owl/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-</head>
-<body>
+		<!-- Javascript -->
+		<script src="{% static 'vendor/bootstrap/jquery-3.6.0.min.js' %}"></script>
+		<script src="{% static 'vendor/bootstrap/bootstrap.min.js' %}"></script>
+		<script src="{% static 'vendor/owl/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logo-background">
+				<div class="orange-red-crayola"></div>
+				<div class="flame"></div>
+				<div class="honey-yellow"></div>
+				<div class="mountain-meadow"></div>
+				<div class="sea-green-crayola"></div>
+				<div class="carolina-blue"></div>
+				<img
+					class="logo-image"
+					src="{% static 'images/CSO_BLEK.png' %}"
+					alt="The letters 'CSO' in a white bold retro style font with a black background."
+				/>
+			</div>
+		</header>
 
-    <section id="logo-top">
-      <div class="logo-background">
-        <div class="orange-red-crayola"></div>
-        <div class="flame"></div>
-        <div class="honey-yellow"></div>
-        <div class="mountain-meadow"></div>
-        <div class="sea-green-crayola"></div>
-        <div class="carolina-blue"></div>
-        <div class="logo-image-container">
-          <img class="logo-image" src="{% static 'images/CSO_BLEK.png' %}" alt="The letters C S O in a white bold retro style font with a black background">
-        </div>
-      </div>
-    </section>
+		<section id="navigation-bar">
+			<nav class="navbar navbar-expand-md navbar-dark navbar-static-top">
+				<div class="navbar-header">
+					<button
+						class="navbar-toggler navbar-toggler-right"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbar-elements"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
 
-    <section id="navigation-bar">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-static-top">
-            <div class="navbar-header">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-elements">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+				<div class="collapse navbar-collapse" id="navbar-elements">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="{% url 'home' %}" class="btn btn-simple btn-lg">Home</a>
+						</li>
+						{% if user.is_authenticated %}
+						<li class="nav-item">
+							<a
+								href="{% url 'accounts:memberspage' %}"
+								class="btn btn-simple btn-lg"
+								>Members</a
+							>
+						</li>
+						{% else %} {% endif %}
+						<li class="nav-item">
+							<a href="{% url 'projects' %}" class="btn btn-simple btn-lg"
+								>Projects</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="{% url 'NewsEvents' %}" class="btn btn-simple btn-lg"
+								>News/Events</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="{% url 'aboutus' %}" class="btn btn-simple btn-lg"
+								>About Us</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="{% url 'memberpages' %}" class="btn btn-simple btn-lg"
+								>Member Pages</a
+							>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						{% if user.is_authenticated %}
+						<div class="dropdown-divider"></div>
+						<li class="nav-item">
+							<a
+								href="{% url 'accounts:profile' %}"
+								class="btn btn-simple btn-lg"
+								>Profile</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="{% url 'accounts:logout' %}"
+								class="btn btn-simple btn-lg"
+								>Logout</a
+							>
+						</li>
+						{% else %}
+						<div class="dropdown-divider"></div>
+						<div class="d-none d-lg-block">
+							<li class="nav-item">
+								<a
+									href="{% url 'accounts:login' %}"
+									class="btn btn-simple btn-lg"
+									>Sign in</a
+								>
+							</li>
+						</div>
+						<li class="nav-item">
+							<a
+								href="{% url 'accounts:signup' %}"
+								class="btn btn-simple btn-lg"
+								>Sign up</a
+							>
+						</li>
+						{% endif %}
+					</ul>
+				</div>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<div class="d-block d-md-none">
+							<a href="{% url 'accounts:login' %}" class="btn btn-simple btn-lg"
+								>Sign in</a
+							>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</section>
 
-            <div class="collapse navbar-collapse" id="navbar-elements">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="{% url 'home' %}" class="btn btn-simple btn-lg">Home</a></li>
-                    {% if user.is_authenticated %}
-                        <li class="nav-item"><a href="{% url 'accounts:memberspage' %}" class="btn btn-simple btn-lg">Members</a></li>
-                    {% else %}
-                    {% endif %}
-                    <li class="nav-item"><a href="{% url 'projects' %}" class="btn btn-simple btn-lg">Projects</a></li>
-                    <li class="nav-item"><a href="{% url 'NewsEvents' %}" class="btn btn-simple btn-lg">News/Events</a></li>
-                    <li class="nav-item"><a href="{% url 'aboutus' %}" class="btn btn-simple btn-lg">About Us</a></li>
-                    <li class="nav-item"><a href="{% url 'memberpages' %}" class="btn btn-simple btn-lg">Member Pages</a></li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    {% if user.is_authenticated %} 
-                        <div class="dropdown-divider"></div>
-                        <li class="nav-item"><a href="{% url 'accounts:profile' %}" class="btn btn-simple btn-lg">Profile</a></li>
-                        <li class="nav-item"><a href="{% url 'accounts:logout' %}" class="btn btn-simple btn-lg">Logout</a></li>
-                    {% else %}
-                        <div class="dropdown-divider"></div>
-                        <div class="d-none d-lg-block">
-                            <li class="nav-item"><a href="{% url 'accounts:login' %}" class="btn btn-simple btn-lg">Sign in</a></li>
-                        </div>
-                        <li class="nav-item"><a href="{% url 'accounts:signup' %}" class="btn btn-simple btn-lg">Sign up</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div class="d-block d-md-none">
-                        <a href="{% url 'accounts:login' %}" class="btn btn-simple btn-lg">Sign in</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <div class="below-nav"></div>
-    </section>
+		{% block content %} {% endblock %}
+		<footer>
+			<div class="logo-background">
+				<div class="orange-red-crayola footer-size"></div>
+				<div class="flame footer-size"></div>
+				<div class="honey-yellow footer-size"></div>
+				<div class="mountain-meadow footer-size"></div>
+				<div class="sea-green-crayola footer-size"></div>
+				<div class="carolina-blue footer-size"></div>
+				<div class="logo-image-container footer-size"></div>
+			</div>
 
-    {% block content %}
+			<div class="col footer-margin">
+				<p class="lead footer-navtext">
+					<a class="footer-text" href="{% url 'home' %}">Home </a>
+					<a class="footer-text" href="{% url 'projects' %}">Projects</a>
+					<a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
+					<a class="footer-text" href="{% url 'aboutus' %}">About us</a>
+					<a class="footer-text" href="{% url 'memberpages' %}">Member Pages</a>
+					<a class="back-to-top" style="text-decoration: none" href="#"
+						><i class="icofont-rounded-up"></i
+					></a>
+				</p>
+			</div>
+			<!-- <div>
+				<table aria-colcount="4" aria-rowcount="1">
+					<tr>
+						<td><a href="{% url 'home' %}" class="footer-text">Home</a></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="{% url 'projects' %}" class="footer-text">Projects</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="{% url 'NewsEvents' %}" class="footer-text"
+								>News/Events</a
+							>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="{% url 'aboutus' %}" class="footer-text">About Us</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="{% url 'memberpages' %}" class="footer-text"
+								>Member Pages</a
+							>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<a
+				class="back-to-top"
+				style="text-decoration: none; display: inline"
+				href="#"
+				><i class="icofont-rounded-up"></i>
+			</a> -->
 
-    {% endblock %}
-    <footer>
-      <div class="logo-background">
-        <div class="orange-red-crayola footer-size"></div>
-        <div class="flame footer-size"></div>
-        <div class="honey-yellow footer-size"></div>
-        <div class="mountain-meadow footer-size"></div>
-        <div class="sea-green-crayola footer-size"></div>
-        <div class="carolina-blue footer-size"></div>
-        <div class="logo-image-container footer-size">
-        </div>
-      </div>
-
-       <div class="col footer-margin">
-            <p class="lead footer-navtext">
-                <a class="footer-text" href="{% url 'home' %}">Home </a>
-                <a class="footer-text" href="{% url 'projects' %}">Projects</a>
-                <a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
-                <a class="footer-text" href="{% url 'aboutus' %}">About us</a>
-                <a class="footer-text" href="{% url 'memberpages' %}">Member Pages</a>
-                <a class="back-to-top" style="text-decoration: none;" href="#"><i class="icofont-rounded-up"></i></a>
-            </p>
-       </div>
-
-        <div class="col below-footer-bg">
-            <p class=" footer-disclaimer">This website was designed and is managed by Computer Science Organization members.</p>
-        </div>
-    </footer>
-</body>
+			<div class="col below-footer-bg">
+				<p class="footer-disclaimer">
+					This website was designed and is managed by Computer Science
+					Organization members.
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>
