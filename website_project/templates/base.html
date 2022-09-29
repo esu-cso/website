@@ -83,15 +83,6 @@
 						<li class="nav-item">
 							<a href="{% url 'home' %}" class="btn btn-simple btn-lg">Home</a>
 						</li>
-						{% if user.is_authenticated %}
-						<li class="nav-item">
-							<a
-								href="{% url 'accounts:memberspage' %}"
-								class="btn btn-simple btn-lg"
-								>Members</a
-							>
-						</li>
-						{% else %} {% endif %}
 						<li class="nav-item">
 							<a href="{% url 'projects' %}" class="btn btn-simple btn-lg"
 								>Projects</a
@@ -101,65 +92,14 @@
 							<a href="{% url 'NewsEvents' %}" class="btn btn-simple btn-lg"
 								>News/Events</a
 							>
-						</li>
-						<li class="nav-item">
-							<a href="{% url 'aboutus' %}" class="btn btn-simple btn-lg"
-								>About Us</a
-							>
-						</li>
 						<li class="nav-item">
 							<a href="{% url 'memberpages' %}" class="btn btn-simple btn-lg"
 								>Member Pages</a
 							>
 						</li>
 					</ul>
-					<ul class="navbar-nav ml-auto">
-						{% if user.is_authenticated %}
-						<div class="dropdown-divider"></div>
-						<li class="nav-item">
-							<a
-								href="{% url 'accounts:profile' %}"
-								class="btn btn-simple btn-lg"
-								>Profile</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								href="{% url 'accounts:logout' %}"
-								class="btn btn-simple btn-lg"
-								>Logout</a
-							>
-						</li>
-						{% else %}
-						<div class="dropdown-divider"></div>
-						<div class="d-none d-lg-block">
-							<li class="nav-item">
-								<a
-									href="{% url 'accounts:login' %}"
-									class="btn btn-simple btn-lg"
-									>Sign in</a
-								>
-							</li>
-						</div>
-						<li class="nav-item">
-							<a
-								href="{% url 'accounts:signup' %}"
-								class="btn btn-simple btn-lg"
-								>Sign up</a
-							>
-						</li>
-						{% endif %}
 					</ul>
 				</div>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<div class="d-block d-md-none">
-							<a href="{% url 'accounts:login' %}" class="btn btn-simple btn-lg"
-								>Sign in</a
-							>
-						</div>
-					</li>
-				</ul>
 			</nav>
 		</section>
 
@@ -180,7 +120,6 @@
 					<a class="footer-text" href="{% url 'home' %}">Home </a>
 					<a class="footer-text" href="{% url 'projects' %}">Projects</a>
 					<a class="footer-text" href="{% url 'NewsEvents' %}">News/Events</a>
-					<a class="footer-text" href="{% url 'aboutus' %}">About us</a>
 					<a class="footer-text" href="{% url 'memberpages' %}">Member Pages</a>
 					<a class="back-to-top" style="text-decoration: none" href="#"
 						><i class="icofont-rounded-up"></i
@@ -202,11 +141,6 @@
 							<a href="{% url 'NewsEvents' %}" class="footer-text"
 								>News/Events</a
 							>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="{% url 'aboutus' %}" class="footer-text">About Us</a>
 						</td>
 					</tr>
 					<tr>
