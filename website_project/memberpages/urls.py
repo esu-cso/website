@@ -8,5 +8,6 @@ urlpatterns = [
     path('', views.memberpages.as_view(), name='memberpages'),
     path('logankeim/', views.logankeim.as_view(), name='logankeim'),
     path('johnwinward/', views.johnwinward.as_view(), name='johnwinward'),
+    path('williamyouse/', views.williamyouse.as_view(), name='williamyouse'),
 ]
 
