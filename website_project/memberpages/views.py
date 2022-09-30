@@ -9,5 +9,5 @@ class logankeim(TemplateView):
 class johnwinward(TemplateView):
     template_name = 'memberpages/johnwinward.html'
 
-class willyouse(TemplateView):
+class williamyouse(TemplateView):
     template_name = 'memberpages/williamyouse.html'
