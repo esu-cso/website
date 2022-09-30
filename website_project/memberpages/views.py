@@ -8,3 +8,6 @@ class logankeim(TemplateView):
 
 class johnwinward(TemplateView):
     template_name = 'memberpages/johnwinward.html'
+
+class williamyouse(TemplateView):
+    template_name = 'memberpages/williamyouse.html'
