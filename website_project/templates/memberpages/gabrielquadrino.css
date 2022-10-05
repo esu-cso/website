@@ -1,0 +1,18 @@
+* {
+    background-color: rgb(51, 198, 219);
+}
+h1 {
+    color: rgb(52, 52, 52);
+}
+h2 {
+    color: rgb(48, 48, 97);
+}
+h3 {
+    color: rgb(95, 89, 128);
+}
+p, ul, ol {
+    color: rgb(48, 48, 97);
+}
+a {
+    color: rgb(14, 52, 160);
+}
