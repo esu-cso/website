@@ -11,3 +11,6 @@ class johnwinward(TemplateView):
 
 class williamyouse(TemplateView):
     template_name = 'memberpages/williamyouse.html'
+
+class gabrielquadrino(TemplateView):
+    template_name = 'memberpages/gabrielquadrino.html'
