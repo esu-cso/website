@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<body id = "body" style="background-color:rgb(175, 238, 238) ;">
+
+<div id="text" style="color:#191970 ; font-family: 'Arial'; text-align:center;">
+
+<h1 style="font-size: xx-large;" >Welcome to my page!</h1>
+
+<p id= "p1" style= "font-size: x-large;">
+I'm Roshan Forde, I am in my first year at ESU as I just transferred from Northampton CC.<br>
+I am a computer science major, and a mathematics minor.<br>
+Aside from CSO, I am also a member of ESU's Concert and Jazz bands.<br>
+In my free time, I enjoy playing tennis, watching the Yankees win and playing musical instruments.<br>
+At the moment I have a growing interest in software and mobile app development, web development is alright too.<br>
+I look forward to posting some personal projects in the near future if I ever finish anything, but for now enjoy these buttons.
+
+</p>
+
+</div>
+
+<button type="button" style="position:relative;left:250px; background-color: white;font-family: 'Courier New';" onclick="changeBGColor()">Random background color</button>
+<button type="button" style="position:relative;left:250px; background-color: white;font-family: 'Courier New';" onclick="changeTextColor()">Random text color</button>
+<button type="button" style="position:relative;left:250px; background-color: white;font-family: 'Courier New';" onclick="changeBothColors()">Random background & text color</button>
+<button type="button" style="position:relative;left:250px; background-color: white;font-family: 'Courier New';" onclick="setBW()">Set to black & white</button>
+
+<script> 
+function changeBGColor(){
+
+var r = Math.floor(Math.random()*256);
+var g = Math.floor(Math.random()*256);
+var b = Math.floor(Math.random()*256);
+
+document.getElementById("body").style.backgroundColor = "rgb("+r+","+g+","+b+")"; 
+
+}
+
+function changeTextColor(){
+
+var r = Math.floor(Math.random()*256);
+var g = Math.floor(Math.random()*256);
+var b = Math.floor(Math.random()*256);
+
+document.getElementById("text").style.color = "rgb("+r+","+g+","+b+")"; 
+
+}
+function changeBothColors(){
+    changeBGColor();
+    changeTextColor();
+}
+function setBW(){
+    document.getElementById("body").style.backgroundColor = "rgb(255,255,255)";
+    document.getElementById("text").style.color = "rgb(0,0,0)"; 
+    
+}
+</script>
+
+</body>
+</html>
