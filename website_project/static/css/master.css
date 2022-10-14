@@ -2,41 +2,41 @@
 # Container
 --------------------------------------------------------------*/
 @media (min-width: 768px) {
-	.container-small {
-		width: 300px;
-	}
-	.container-large {
-		width: 970px;
-	}
+    .container-small {
+        width: 300px;
+    }
+    .container-large {
+        width: 970px;
+    }
 }
 @media (min-width: 992px) {
-	.container-small {
-		width: 500px;
-	}
-	.container-large {
-		width: 1170px;
-	}
+    .container-small {
+        width: 500px;
+    }
+    .container-large {
+        width: 1170px;
+    }
 }
 @media (min-width: 1200px) {
-	.container-small {
-		width: 700px;
-	}
-	.container-large {
-		width: 1500px;
-	}
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1500px;
+    }
 }
 
 .container-small,
 .container-large {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /*--------------------------------------------------------------
 # Font
 --------------------------------------------------------------*/
 @font-face {
-	font-family: logoFont;
-	src: url(computo-monospace.otf);
+    font-family: logoFont;
+    src: url(computo-monospace.otf);
 }
 
 /*--------------------------------------------------------------
@@ -44,192 +44,182 @@
 --------------------------------------------------------------*/
 
 body {
-	background-color: #32353b;
+    background-color: #32353b;
 }
 
 body > div {
-	margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 @media (min-width: 1200px) {
     .console-container {
-      font-family: logoFont;
-      font-size: 3em;
-      text-align: center;
-      display: block;
-      position: relative;
-      color: white;
-      top: 100px;
-      bottom: 0;
-      left: 0;
-      right: 0;
+        font-family: logoFont;
+        font-size: 3em;
+        text-align: center;
+        display: block;
+        position: relative;
+        color: white;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
 
 @media (max-width: 1199px) {
     .console-container {
-      font-family: logoFont;
-      font-size: 1.5em;
-      text-align: center;
-      display: block;
-      position: relative;
-      color: white;
-      bottom: 0;
-      left: 0;
-      right: 0;
+        font-family: logoFont;
+        font-size: 1.5em;
+        text-align: center;
+        display: block;
+        position: relative;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     .construction {
-      top: 10%;
-      margin-top: 2%;
+        top: 10%;
+        margin-top: 2%;
     }
 }
 
 .construction_text {
-	text-align: center;
-	color: white;
+    text-align: center;
+    color: white;
 }
 
 .btn {
-	color: white;
+    color: white;
 }
 
 .console-underscore {
-	display: inline-block;
-	position: relative;
-	top: 0;
-	left: -30px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -30px;
 }
 
 .front-pic {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 6%;
-	border: solid 2px black;
-	border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    border: solid 2px black;
+    border-radius: 25px;
 }
 
 /*--------------------------------------------------------------
 # Logo background
 --------------------------------------------------------------*/
 .logo-background {
-	padding: 2px 0px;
-	position: relative;
+    padding: 2px 0px;
+    position: relative;
 }
 
 .logo-background div {
-	width: 100%;
-	border: 2px #161616 solid;
+    width: 100%;
+    border: 2px #161616 solid;
 }
 
 header .logo-background div {
-	height: 20px;
-	border: 2px inherit inherit;
-	border-radius: 10px;
+    height: 20px;
+    border: 2px inherit inherit;
+    border-radius: 10px;
 }
 
 footer .logo-background div {
-	height: 10px;
-	border: px inherit inherit;
-	border-radius: 5px;
+    height: 10px;
+    border: px inherit inherit;
+    border-radius: 5px;
 }
 
 :root {
-	--orange-red-crayola: #fe5f55;
-	--flame: #e4572e;
-	--honey-yellow: #f7b32b;
-	--mountain-meadow: #13c4a3;
-	--sea-green-crayola: #36f1cd;
-	--carolina-blue: #39a0ed;
+    --orange-red-crayola: #fe5f55;
+    --flame: #e4572e;
+    --honey-yellow: #f7b32b;
+    --mountain-meadow: #13c4a3;
+    --sea-green-crayola: #36f1cd;
+    --carolina-blue: #39a0ed;
 }
 
 .logo-background .orange-red-crayola {
-	background-color: var(--orange-red-crayola);
+    background-color: var(--orange-red-crayola);
 }
 
 .logo-background .flame {
-	background-color: var(--flame);
+    background-color: var(--flame);
 }
 
 .logo-background .honey-yellow {
-	background-color: var(--honey-yellow);
+    background-color: var(--honey-yellow);
 }
 
 .logo-background .mountain-meadow {
-	background-color: var(--mountain-meadow);
+    background-color: var(--mountain-meadow);
 }
 
 .logo-background .sea-green-crayola {
-	background-color: var(--sea-green-crayola);
+    background-color: var(--sea-green-crayola);
 }
 
 .logo-background .carolina-blue {
-	background-color: var(--carolina-blue);
+    background-color: var(--carolina-blue);
 }
 
 .logo-background .logo-image {
-	height: 5rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.footer-size {
-	height: 10px !important;
+footer .logo-background div {
+    height: 10px;
 }
 
-.footer-text {
-	color: white;
-	margin-right: 25px;
-}
-
-/* if using nathan's footer table 
 table {
-	margin: 1rem auto;
-	text-align: center;
+    margin: 1rem auto;
+    text-align: center;
 }
-.footer-text {
-	margin: 12px;
-	font-size: 1.25rem;
-	font-weight: 300;
-}
-*/
 
-.footer-navtext {
-	margin-top: 5px;
-	text-align: center;
+footer table td a {
+    margin: 12px;
+		font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
 }
 
 .footer-disclaimer {
-	margin: 1rem;
-	font-weight: bold;
-	font-size: 17px;
-	color: gray;
-	text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 17px;
+    color: gray;
+    text-align: center;
 }
 
 .footer-margin {
-	margin-top: 5px;
-	margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .below-footer-bg {
-	background: #202020;
-	padding: 1px;
+    background: #202020;
+    padding: 1px;
 }
 
 .right-footer {
-	margin-left: -15px;
-	margin-right: -5px;
+    margin-left: -15px;
+    margin-right: -5px;
 }
 
 /*--------------------------------------------------------------
 # Nav menu
 --------------------------------------------------------------*/
 #navigation-bar {
-	border-bottom: 2px #161616 solid;
+    border-bottom: 2px #161616 solid;
 }
 
 /*--------------------------------------------------------------
@@ -237,17 +227,17 @@ table {
 --------------------------------------------------------------*/
 header,
 footer {
-	background-color: #161616;
+    background-color: #161616;
 }
 
 .below-footer {
-	width: 100%;
-	height: 10px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #161613;
-	border-radius: 5px;
-	background-color: #39a0ed;
+    width: 100%;
+    height: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #161613;
+    border-radius: 5px;
+    background-color: #39a0ed;
 }
 
 /*--------------------------------------------------------------
@@ -283,25 +273,25 @@ footer {
 --------------------------------------------------------------*/
 
 .landingpageinfo.col-lg-4 {
-	margin-bottom: 1.5rem;
-	text-align: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 .landingpageinfo h2 {
-	font-weight: 400;
+    font-weight: 400;
 }
 .landingpageinfo .col-lg-4 p {
-	margin-right: 0.75rem;
-	margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
 }
 
 .landingpageinfo {
-	color: white;
+    color: white;
 }
 
 .titlemain {
-	margin-top: -95px;
-	padding-bottom: 15px;
-	text-align: center;
+    margin-top: -95px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -309,111 +299,111 @@ footer {
 --------------------------------------------------------------*/
 .log-in-form,
 .sign-up-form {
-	/*
+    /*
   padding-top: 30px;
   padding-bottom: 40px;
   padding-right: 30px;
   padding-left: 30px;
  */
-	padding: 30px 30px 40px;
-	border-radius: 10px;
-	background-color: #808080;
-	margin-top: 5%;
-	margin-bottom: 5%;
+    padding: 30px 30px 40px;
+    border-radius: 10px;
+    background-color: #808080;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .sign-up-form .form-text {
-	color: white !important;
+    color: white !important;
 }
 
 .RBorder {
-	border-right: thin solid white;
+    border-right: thin solid white;
 }
 .newsevents {
-	margin-top: -65px;
+    margin-top: -65px;
 }
 
 .featurette-divider {
-	margin: 5rem 0;
-	color: white;
+    margin: 5rem 0;
+    color: white;
 }
 
 .featurette-heading {
-	font-weight: 300;
-	line-height: 1;
-	letter-spacing: -0.05rem;
-	color: white;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    color: white;
 }
 
 .featurette-image {
-	height: 300px;
-	width: 400px;
+    height: 300px;
+    width: 400px;
 }
 
 body.row featurette {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	color: #5a5a5a;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
 }
 @media (min-width: 40em) {
-	.carousel-caption p {
-		margin-bottom: 1.25rem;
-		font-size: 1.25rem;
-		line-height: 1.4;
-	}
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
 
-	.featurette-heading {
-		font-size: 50px;
-	}
+    .featurette-heading {
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 62em) {
-	.featurette-heading {
-		margin-top: 7rem;
-	}
+    .featurette-heading {
+        margin-top: 7rem;
+    }
 }
 
 .lead,
 .maincon {
-	color: white;
+    color: white;
 }
 
 .owl-theme {
-	margin-top: -50px;
-	margin-bottom: -60px;
+    margin-top: -50px;
+    margin-bottom: -60px;
 }
 
 .card {
-	background-color: white;
+    background-color: white;
 }
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-	position: fixed;
-	display: none;
-	right: 15px;
-	bottom: 15px;
-	z-index: 99999;
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
 }
 
 .back-to-top i {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 24px;
-	width: 40px;
-	height: 40px;
-	border-radius: 4px;
-	background: #c0c0c0;
-	color: #fff;
-	transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #c0c0c0;
+    color: #fff;
+    transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-	background: #d3d3d3;
-	color: #fff;
+    background: #d3d3d3;
+    color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -421,7 +411,7 @@ body.row featurette {
 --------------------------------------------------------------*/
 
 .box-shadow {
-	box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.938);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.938);
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -429,45 +419,45 @@ body.row featurette {
 
 /* Carousel base class */
 .carousel {
-	margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-	bottom: 3rem;
-	z-index: 10;
+    bottom: 3rem;
+    z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-	height: 35rem;
-	background-color: #32353b;
+    height: 35rem;
+    background-color: #32353b;
 }
 
 .first-slide {
-	display: block;
-	height: 30rem;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .buttons {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btnTable {
-	padding: 20px;
-	margin: auto;
-	width: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 10px;
 }
 
 .slideHeader {
-	padding: 20px;
-	margin: 20px;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* Defines image sizes for the "What We Do" section */
 .WWD img {
-	height: 140px;
-	width: 140px;
+    height: 140px;
+    width: 140px;
 }
