@@ -1,0 +1,59 @@
+.FullName {
+  font-family: Permanent Marker;
+  text-align: center;
+  font-size: 8rem;
+  position: absolute;
+  color: #fff;
+  padding: 5% 10% 5% 50%;
+}
+
+.FNImage {
+  width: 100%;
+
+}
+
+.row {
+  width: 101%;
+}
+
+.parastop {
+  background-color: #DFF6FF;
+  padding-top: 5%;
+}
+
+.parasmid {
+  background-color: #31C6D4;
+  padding-top: 5%;
+}
+
+.parasbot {
+  background-color: #8D9EFF;
+  padding-top: 5%;
+}
+
+.selfie {
+  padding-left: 40%;
+  width: 80%;
+  height: 90%;
+}
+
+.leftDiv {
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+.rightDiv {
+  padding-right: 20%;
+}
+
+.homerPic {
+  padding-bottom: 10%;
+  padding-right: 10%;
+  width: 80%;
+}
+
+.tkdPic {
+  padding-bottom: 10%;
+  padding-left: 40%;
+  width: 95%;
+}

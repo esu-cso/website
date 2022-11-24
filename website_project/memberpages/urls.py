@@ -10,6 +10,7 @@ urlpatterns = [
     path('johnwinward/', views.johnwinward.as_view(), name='johnwinward'),
     path('williamyouse/', views.williamyouse.as_view(), name='williamyouse'),
     path('gabrielquadrino/', views.gabrielquadrino.as_view(), name='gabrielquadrino'),
-    path('roshanforde/', views.roshanforde.as_view(), name='roshanforde')
+    path('roshanforde/', views.roshanforde.as_view(), name='roshanforde'),
+    path('benchernin/', views.benchernin.as_view(), name='benchernin')
 ]
 
