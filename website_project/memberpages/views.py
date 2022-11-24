@@ -17,3 +17,6 @@ class gabrielquadrino(TemplateView):
 
 class roshanforde(TemplateView):
     template_name = "memberpages/roshanforde.html"
+
+class benchernin(TemplateView):
+    template_name = "memberpages/benchernin.html"

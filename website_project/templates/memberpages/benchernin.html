@@ -1,3 +1,4 @@
+{% load static %}
 <html>
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -9,17 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="PersonalSiteCSS.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bencherninCSS.css' %}"/>
 </head>
 <body>
   <div class="titleContainer">
-    <h1 class="FullName">Benjamin J. Chernin</h1>
-    <img class="FNImage" src="C:\Users\bille\OneDrive\Documents\Web Development\Personal Site\Personal-Webpage\PersonalSiteImages\35002.jpg" alt="">
+    <img class="FNImage" src="{% static 'images/bencherninCSS_Images/35002.jpg' %}" alt="">
   </div>
 
   <div class="parastop row">
     <div class="col-6">
-      <img class="selfie" src="C:\Users\bille\OneDrive\Documents\Web Development\Personal Site\Personal-Webpage\PersonalSiteImages\IMG_0023.jpg" alt="">
+      <img class="selfie" src="{% static 'images/bencherninCSS_Images/IMG_0023.jpg' %}" alt="">
     </div>
     <div class="col-6 rightDiv">
       <h3>About Me</h3>
@@ -33,13 +33,13 @@
       <p>One day, I hope to become a proficient programmer in whatever field I choose. I wish to expose myself as much as possible to many different aspects of computer science so that I can find what's right for me. And maybe one day, if I have the time for it, I could run my own Taekwondo school part-time alongside my programming carreer.</p>
     </div>
     <div class="col-6">
-      <img class="homerPic" src="C:\Users\bille\OneDrive\Documents\Web Development\Personal Site\Personal-Webpage\PersonalSiteImages\SimpsonComp.gif" alt="">
+      <img class="homerPic" src="{% static 'images/bencherninCSS_Images/SimpsonComp.gif' %}" alt="">
     </div>
   </div>
 
   <div class="parasbot row">
     <div class="col-6">
-      <img class="tkdPic" src="C:\Users\bille\OneDrive\Documents\Web Development\Personal Site\Personal-Webpage\PersonalSiteImages\TKD_GIF.gif" alt=""/>
+      <img class="tkdPic" src="{% static 'images/bencherninCSS_Images/TKD_GIF.gif' %}" alt=""/>
     </div>
     <div class="col-6 rightDiv">
       <h3>Experiences</h3>
